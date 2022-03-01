@@ -1,0 +1,31 @@
+.list {
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+
+  .empty {
+    color: #ffffff;
+    margin: 20px;
+  }
+}
+
+.buttons {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+
+  .button {
+    margin: 0 10px;
+    background-color: #008f7a;
+    border: 1px solid #008f7a;
+    border-radius: 10px;
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,52 @@
+@mixin button {
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px 20px;
+  border: 2px solid #845ec2;
+  border-radius: 50px;
+  font-size: 20px;
+  font-weight: 600;
+  transition: ease-in-out 0.3s;
+
+  &:hover {
+    background-color: rgba($color: #845ec2, $alpha: 0.3);
+    color: #ffffff;
+    cursor: pointer;
+  }
+}
+
+.home {
+  background-image: linear-gradient(to right top, #845ec2, #0085e4, #00a2e5, #00b9cc, #00c9a7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  .title {
+    font-size: 48px;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .buttons {
+    margin: 20px;
+    .button {
+      background: none;
+      color: #845ec2;
+      @include button();
+
+      &:hover {
+        background-color: rgba($color: #845ec2, $alpha: 0.3);
+        color: #ffffff;
+        cursor: pointer;
+      }
+    }
+
+    .activeButton {
+      background-color: #845ec2;
+      color: #ffffff;
+      @include button();
+    }
+  }
+}

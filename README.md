@@ -8,3 +8,6 @@ React Workshops - Inżynierskie Targi Pracy PG 02.03.2022
 - installed Node => 14 (https://nodejs.org/)
 - installed npm => 5.2 (https://docs.npmjs.com/)
 - installed npx (https://github.com/npm/npx)
+
+
+API: https://spaceflightnewsapi.net/
